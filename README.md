@@ -1,6 +1,6 @@
 # 獅尾三角黑體 Swei 3T Sans
 
-獅尾三角黑體基於[思源黑體](https://github.com/adobe-fonts/source-han-sans)增加斜角和拔腳改造，更加簡明現代化的字體。支援简体中文、繁體中文、韓文與日文；歡迎大家自由應用、自由優化、自由改作！
+獅尾三角黑體基於[思源黑體](https://github.com/adobe-fonts/source-han-sans)筆觸開花和拔腳改造，更加簡明現代化的字體。支援简体中文、繁體中文、韓文與日文；歡迎大家自由應用、自由優化、自由改作！
 
 獅尾三角黑體的特色是，「一」字的開頭和結尾筆觸由平頭換成開花式的三個三角形。
 
@@ -8,6 +8,7 @@
 
 和思源黑體一樣，支援7種的字重：
 ![字體比較預覽](https://github.com/max32002/swei-3t-sans/raw/master/preview/compare_style.png)
+附註：目前有些筆畫還沒有套用到效果，是程式需要改進的地方。
 
 ## 與其他字體的比較
 * 在「刂」的筆畫，獅尾比較相似台灣(教育部國字標準字體)教育部推薦字體筆順。
@@ -15,17 +16,6 @@
 * 在「草」部的筆畫，獅尾是分開的二個部份。
 * 字體裡的「草字頭部首」中間該不該連起來，「肉字旁部首」該不該變成「月」，要不要把手寫習慣代入印刷字體？整體看來，會不會影響視覺的延伸性？會不會影響印刷的可行性與閱讀的便利性？這個答案我也不清楚，如果你是台灣教育部標準字符的愛好者，獅尾字體應該是一個不錯的選擇。
 
-### 「CJK TC」和「CJK SC」的比較：
-![TC和SC比較](https://github.com/max32002/swei-3t-sans/raw/master/preview/compare_tc_sc.png)
-* 在「肉」、「糸」、「女」、「辶」、「食」的筆畫不同，CJK SC 「肉字旁部首」變成「月」。 
-* 在「草」部的筆畫，CJK SC 中間連起來。
-* 雨、身、戶、舟、北、㕣、酋字寫法不同。
-
-### 「CJK TC」和「CJK JP」的比較：
-![TC和JP比較](https://github.com/max32002/swei-3t-sans/raw/master/preview/compare_tc_jp.png)
-* 在「肉」、「糸」、「女」、「辶」、「食」的筆畫不同，CJK JP 「肉字旁部首」變成「月」。 
-* 在「草」部的筆畫，CJK JP 中間連起來。
-* 雨、言、青、兌、賣、直、真、曾、戶、北、㕣、酋字寫法不同。其他[常見與日系字型的差異](https://max-everyday.com/2020/06/taiwanpearl/#diff)。
 
 ## 更新日誌
 [點擊此處](https://github.com/max32002/swei-3t-sans/blob/master/change_log.md) 查看更新記錄。
