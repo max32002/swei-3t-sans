@@ -64,7 +64,7 @@ class Rule(Rule.Rule):
                 #print("+0 code:", format_dict_array[(idx+0)%nodes_length]['code'])
 
                 if is_debug_mode:
-                    debug_coordinate_list = [[120,232]]
+                    debug_coordinate_list = [[829,-73]]
                     if not([format_dict_array[idx]['x'],format_dict_array[idx]['y']] in debug_coordinate_list):
                         continue
 
@@ -81,6 +81,7 @@ class Rule(Rule.Rule):
                 if is_match_pattern:
                     fail_code = 100
                     is_match_pattern = False
+
                     if format_dict_array[(idx+1)%nodes_length]['t'] == 'l':
                         if format_dict_array[(idx+2)%nodes_length]['t'] == 'l':
                             is_match_pattern = True
@@ -88,6 +89,7 @@ class Rule(Rule.Rule):
                 # special case for uni9750 靐 的雷的一
                 # for prefer 橫線.(雖然也會match直線)
                 if nodes_length == 4:
+                    fail_code = 110
                     if is_match_pattern:
                         if format_dict_array[(idx+1)%nodes_length]['distance'] > format_dict_array[(idx+0)%nodes_length]['distance']:
                             if format_dict_array[(idx+3)%nodes_length]['distance'] > format_dict_array[(idx+2)%nodes_length]['distance']:
@@ -97,9 +99,10 @@ class Rule(Rule.Rule):
                                             # pass to let Rule#1 match.
                                             continue
 
+                # 增加可以處理的case
+                # convert ?cl? => ?ll?
                 # 格式化例外：.31884 「禾」上面的斜線。
                 # 一般是 match ?ll?, 要來match ?lc?
-                # convert ?cl? => ?ll?
                 DISTANCE_IN_LINE_ACCURACY = 0.06
                 if format_dict_array[(idx+1)%nodes_length]['t'] == 'l':
                     if format_dict_array[(idx+2)%nodes_length]['t'] == 'c':
@@ -264,6 +267,7 @@ class Rule(Rule.Rule):
                 # compare direction
                 if is_match_pattern:
                     fail_code = 400
+                    
                     #print(idx,"debug rule3:",format_dict_array[idx]['code'])
                     is_match_pattern = False
                     if format_dict_array[(idx+0)%nodes_length]['x_direction'] == -1 * format_dict_array[(idx+2)%nodes_length]['x_direction']:
