@@ -148,6 +148,7 @@ class Rule(Rule.Rule):
 
                 # for XD
                 # XD 不在 Rule1 處理水平的case.
+                # PS: 直接在這裡放掉這一個點，會讓Rule#5 or Rule#99套用到。
                 if self.config.PROCESS_MODE in ["XD","RAINBOW"]:
                     if format_dict_array[(idx+0)%nodes_length]['y_equal_fuzzy']:
                         is_match_pattern = False
@@ -357,6 +358,12 @@ class Rule(Rule.Rule):
                     if self.config.PROCESS_MODE in ["RAINBOW"]:
                         is_match_d_base_rule, fail_code = self.going_rainbow_up(format_dict_array,idx)
                         is_goto_apply_round = is_match_d_base_rule
+
+                    # for BOW
+                    if self.config.PROCESS_MODE in ["BOW"]:
+                        generated_code = format_dict_array[(idx+1)%nodes_length]['code']
+                        apply_rule_log.append(generated_code)
+                        is_goto_apply_round = False
 
                     # NUT8, alway do nothing but record the history.
                     if self.config.PROCESS_MODE in ["NUT8"]:
