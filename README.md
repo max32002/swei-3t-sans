@@ -52,8 +52,8 @@
 ```
 @font-face {
   font-family: 'Swei3TSansCJKtc-Regular';
-  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-3t-sans@2.0/WebFont/CJK%20TC/Swei3TSansCJKtc-Regular.woff2) format("woff2")
-  , url(https://cdn.jsdelivr.net/gh/max32002/swei-3t-sans@2.0/WebFont/CJK%20TC/Swei3TSansCJKtc-Regular.woff) format("woff");
+  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-3t-sans@2.129/WebFont/CJK%20TC/Swei3TSansCJKtc-Regular.woff2) format("woff2")
+  , url(https://cdn.jsdelivr.net/gh/max32002/swei-3t-sans@2.129/WebFont/CJK%20TC/Swei3TSansCJKtc-Regular.woff) format("woff");
 }
 ```
 
